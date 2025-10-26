@@ -1,28 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços Municipais - Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<body class="light-theme">
-    <h1>Task List</h1>
-    <p id="msg">Current Tasks:</p>
-    <ul id="task-list">
-        <li class="list">Add visual styles</li>
-        <li class="list">Add light and dark themes</li>
-        <li>Enable switching the theme</li>       
-    </ul>
-    <div>
-        <button class="btn">Dark</button>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Emblem_of_Brazil.svg" alt="logo" class="logo">
+      <h1>SERVIÇOS MUNICIPAIS</h1>
     </div>
-    <div style="margin-top:8px;">
-        <a href="query.html" class="btn" role="button">Abrir query.html</a>
-        <button class="btn" onclick="location.href='query.html'">Abrir (botão)</button>
+    <div class="header-icons">
+      <span class="icon">🌐</span>
+      <span class="icon">❓</span>
     </div>
-    <script src="app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </header>
+
+  <main>
+    <section class="left-side">
+      <div class="image-group">
+        <div class="circle circle-large">
+          <img src="https://images.unsplash.com/photo-1600585154084-4e5fe7c39103?auto=format&fit=crop&w=400&q=80" alt="Cidade">
+        </div>
+        <div class="circle circle-small">
+          <img src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=200&q=80" alt="Mapa">
+        </div>
+      </div>
+      <div class="chat-icons">
+        💬 💭
+      </div>
+    </section>
+
+    <section class="right-side">
+      <div class="login-box">
+        <h2>ACESSAR O PORTAL 🚀</h2>
+        <p class="subtitle">Crie a sua conta</p>
+
+        <div class="buttons">
+          <button class="btn email"><span>✉️</span> Criar conta com Email</button>
+          <button class="btn google"><span>🟥</span> Criar com a conta Google</button>
+        <button class="btn facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="margin-right:8px;fill:#1877f2;">
+                <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07C2 17.1 5.66 21.24 10.44 21.98v-7H7.9v-3h2.54V9.35c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.85h2.74l-.44 3h-2.3v7C18.34 21.24 22 17.1 22 12.07z"/>
+            </svg>
+            Criar com conta Facebook
+        </button>
+          <button class="btn apple"><span>🍎</span> Criar com conta Apple</button>
+        </div>
+
+        <p class="terms">
+          Ao continuar concorda com os nossos <br>
+          <a href="#">Termos & Condições</a> e <a href="#">Política de Privacidade</a>
+        </p>
+
+        <p class="login-link">Já tens uma conta? <a href="#">Log in</a></p>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>
+<!--
+    Documentação da Página HTML
+
+    Esta página contém os seguintes elementos:
+
+    1. <header>: A seção de cabeçalho da página, que geralmente inclui o título e a navegação principal.
+    
+    2. <nav>: A barra de navegação que permite aos usuários acessar diferentes seções do site.
+    
+    3. <main>: A seção principal do conteúdo da página, onde as informações mais relevantes são apresentadas.
+    
+    4. <section>: Seções distintas dentro do conteúdo principal, que podem conter tópicos ou categorias específicas.
+    
+    5. <article>: Um bloco de conteúdo independente que pode ser distribuído ou reutilizado, como um post de blog ou uma notícia.
+    
+    6. <footer>: A seção de rodapé da página, que geralmente contém informações de contato, direitos autorais e links adicionais.
+    
+    7. <aside>: Conteúdo relacionado, como barras laterais ou informações complementares que não são parte do conteúdo principal.
+    
+    8. <h1>, <h2>, <h3>, etc.: Elementos de cabeçalho que definem a hierarquia do conteúdo e ajudam na organização e acessibilidade.
+    
+    9. <p>: Parágrafos de texto que fornecem informações e contexto ao usuário.
+    
+    10. <img>: Elementos de imagem que adicionam elementos visuais à página.
+    
+    11. <a>: Links que permitem a navegação para outras páginas ou recursos externos.
+
+    Esta documentação serve como um guia para entender a estrutura e os elementos utilizados na página HTML.
+-->
